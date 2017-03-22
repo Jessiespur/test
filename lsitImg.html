@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<title>list 4</title>
+		<style type="text/css">
+				li {
+				list-style: none;
+				background: #fff;
+				outline: 1px solid royalblue;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			/*.cf:after {
+				content: "";
+				display: block;
+				overflow: hidden;
+				clear: both;
+			}*/
+			/*.list_4{ margin: 0.8rem auto; border-top: 1px solid burlywood; background: #fff;}
+		.list_4 ul li{ float: left; outline: 1px solid rosybrown; background: #fff;}
+		.list_4 ul li a{ position: relative; display: block;}
+		.list_4 ul li:nth-child(-n+3){ width: 50%;}
+		.list_4 ul li:nth-child(-n+3) a .goods_photo{ position: absolute; right: 0.5rem; bottom: 0.5rem;}
+		.list_4 ul li:first-child{}
+		.list_4 ul li:nth-child(n+4):nth-child(-n+6){ width: 33.33%;}*/
+			
+			.goods_words {
+				display: inline-block;
+				padding: 0.3rem 0.5rem;
+				border-radius: 0.3rem;
+				background: #f60;
+				color: #fff;
+				font-size: 1.2rem;
+				margin-bottom: 0.5rem;
+			}
+			
+			.goods_title,
+			.goods_price,
+			.goods_info {
+					display: block;
+					position: relative;} 
+			
+			.goods_title {color:#000;font-size: 1.2rem;} 
+			.goods_info {color:#999;font-size: 1.2rem;} 
+			.goods_price {color:#f60;font-size: 1.5rem;font-weight: bold;}
+				li{
+					float: left;
+				}
+				li:nth-child(-n+3) {
+					width: 50%;
+					height: 0;
+					position: relative;
+				}
+				li:nth-child(-n+3) a {
+					display: block;
+					position: absolute;
+					left: 0;
+					top: 0;
+					height: 0;
+					width: 100%;
+				}
+				li:nth-child(-n+3) .goods_photo {
+					display: block;
+					position: absolute;
+					right: 0.5rem;
+				}
+				li:nth-child(-n+3) .goods_title,
+				li:nth-child(-n+3) .goods_info,
+				li:nth-child(-n+3) .goods_price {
+					z-index: 2;
+					width: 60%;
+				}
+				li:nth-child(1) {
+					float: left;
+					padding-bottom: 55%;
+				}
+				li:nth-child(1) a {
+					padding-bottom: 110%;
+				}
+				li:nth-child(1) .goods_photo {
+					width: 50%;
+					bottom: 5%;
+				}
+				li:nth-child(1) .goods_title,
+				li:nth-child(1) .goods_info,
+				li:nth-child(1) .goods_price,
+				li:nth-child(1) .goods_words {
+					margin-left: 1.6rem;
+				}
+				li:nth-child(1) .goods_words {
+					margin-top: 1.6rem;
+				}
+				li:nth-child(n+2):nth-child(-n+3) {
+					float: right;
+					padding-bottom: 27.5%;
+				}
+				li:nth-child(n+2):nth-child(-n+3) a {
+					padding-bottom: 55%;
+				}
+				li:nth-child(n+2):nth-child(-n+3) .goods_photo {
+					height: 70%;
+					top: 15%;
+				}
+				li:nth-child(n+2):nth-child(-n+3) .goods_title,
+				li:nth-child(n+2):nth-child(-n+3) .goods_info,
+				li:nth-child(n+2):nth-child(-n+3) .goods_price,
+				li:nth-child(n+2):nth-child(-n+3) .goods_words {
+					margin-left: 1.2rem;
+				}
+				li:nth-child(n+2):nth-child(-n+3) .goods_title {
+					margin-top: 1.6rem;
+				}
+				li:nth-child(n+4) {
+					width: 33.3%;
+					float: left;
+				}
+				li:nth-child(n+4) a {
+					display: block;
+					padding: 1rem;
+				}
+				li:nth-child(n+4) .goods_photo {
+					width: 70%;
+					max-width: 15rem;
+					margin: 0.5rem auto 0;
+					display: block;
+				}
+		</style>
+	</head>
+
+	<body>
+		<div class="list_4 cf">
+			<ul>
+				<li>
+					<a href="#">
+						<!-- 只有第一个有这个热售,其他的木有!~ -->
+						<i class="goods_words">热售</i>
+						<h3 class="goods_title">苹果iPhone6s</h3>
+						<p class="goods_info">A1700</p>
+						<em class="goods_price">￥4679.00</em>
+						<img src="img/11.png" alt="苹果iPhone6s" class="goods_photo">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<h3 class="goods_title">苹果iPhone6s苹果iPhone6s苹果iPhone6s苹果iPhone6s</h3>
+						<p class="goods_info">A1700</p> <em class="goods_price">￥4679.00</em> <img src="img/11.png" alt="苹果iPhone6s苹果iPhone6s苹果iPhone6s苹果iPhone6s" class="goods_photo"> </a>
+				</li>
+				<li>
+					<a href="#">
+						<h3 class="goods_title">苹果iPhone6s苹果iPhone6s苹果iPhone6s苹果iPhone6s</h3>
+						<p class="goods_info">A1700</p> <em class="goods_price">￥4679.00</em> <img src="img/11.png" alt="苹果iPhone6s苹果iPhone6s苹果iPhone6s苹果iPhone6s" class="goods_photo"> </a>
+				</li>
+				<li>
+					<a href="#">
+						<h3 class="goods_title">苹果iPhone6s苹果iPhone6s苹果iPhone6s苹果iPhone6s</h3>
+						<p class="goods_info">A1700</p> <em class="goods_price">￥4679.00</em> <img src="img/11.png" alt="苹果iPhone6s" class="goods_photo"> </a>
+				</li>
+				<li>
+					<a href="#">
+						<h3 class="goods_title">苹果iPhone6s</h3>
+						<p class="goods_info">A1700</p> <em class="goods_price">￥4679.00</em> <img src="img/11.png" alt="苹果iPhone6s" class="goods_photo"> </a>
+				</li>
+				<li>
+					<a href="#">
+						<h3 class="goods_title">苹果iPhone6s</h3>
+						<p class="goods_info">A1700</p> <em class="goods_price">￥4679.00</em> <img src="img/11.png" alt="苹果iPhone6s" class="goods_photo"> </a>
+				</li>
+			</ul>
+		</div>
+	</body>
+
+</html>

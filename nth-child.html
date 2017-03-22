@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>响应式</title>
+		<style type="text/css">
+			li{
+				list-style: none;
+			}
+			ul.list {
+				width: 500px;
+				overflow: hidden;
+				clear: both;
+				padding: 20px;
+				margin: 20px auto;
+				position: relative;
+			}
+			ul.list li {
+				width: 30px;
+				height: 30px;
+				border-radius: 50%;
+				overflow: hidden;
+				color: white;
+				/*文本显示在最底层*/
+				/*text-indent: -9999px;*/
+				background: #f60;
+				float: left;
+				margin: 0 10px;
+			}
+			/*---------------------nth-child选择器--------------------*/
+			
+			/* 第一个 */ 
+			/*ul.list li:first-child{background: #000;}*/ 
+			/* 最后一个 */ 
+			/*ul.list li:last-child{background: #000;}*/
+			/*选择前第几个用 -n+数字*/ 
+			/*ul.list li:nth-child(-n+3){ background: #000; }*/
+			/*选择第4个开始到最后一个*/
+			/*ul.list li:nth-child(n+4){ background: #000;}*/
+			/*第4个开始到第8个*/
+			/*ul.list li:nth-child(n+4):nth-child(-n+8){ background: #000;}*/
+			/*奇数 odd 2n+1 偶数even 2n  3倍   3n*/
+			/*ul.list li:nth-child(even){ background: #000;}*/
+			/*选择2\5\8等三倍数行*/
+			/*ul.list li:nth-child(3n+2){ background: #000;}*/
+			/*选择1\4\7\10等三倍数行 3n+1*/
+			/*选择第三个到第九个之间的奇数行(不包括3\9)*/
+			/*ul.list li:nth-child(2n):nth-child(n+4):nth-child(-n+8){ background: #000;}*/
+			/*选择3位倍数+1的(1/4/7/10)其中的偶数*/
+			/*ul.list li:nth-child(3n+1):nth-child(2n){background: #000;}*/
+			
+			/*---------------------nth-child实现--反选--------------------*/
+			/*ul.list li:not(:nth-child(3n+1)){ background: #000;}*/
+			/*ul.list li:not(:nth-last-child(1)){ background: #000;}*/
+			/*ul.list li:not(:last-child){ background: #000;}*/
+			
+			
+			
+			/*---------------------nth-last-child选择器--------------------*/
+			/*选择最后两个*/
+			ul.list li:nth-last-child(-n+2){ background: #000;}
+			
+
+			
+
+			ul.text {
+				width: 500px;
+				margin: 100px auto;
+			}
+			ul.text li {
+				width: 30px;
+				height: 30px;
+				float: left;
+				margin: 0 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="list">
+			<li>01</li>
+			<li>02</li>
+			<li>03</li>
+			<li>04</li>
+			<li>05</li>
+			<li>06</li>
+			<li>07</li>
+			<li>08</li>
+			<li>09</li>
+			<li>10</li>
+		</ul>
+		
+	</body>
+</html>

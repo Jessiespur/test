@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <style type="text/css">
+    	.nav{
+    		overflow: hidden;
+    		padding: 5px 10px;
+    		background-color: burlywood;
+    		display: -webkit-flex;
+    		/*flex-direction:column ;*/
+    		/*反向排列*/
+    		/*flex-direction: row-reverse;*/
+    		justify-content: flex-end;
+    		/*justify-content: flex-start;左浮动*/
+    	}
+    	.img{
+    		width: 100px;
+    		overflow: hidden;
+    	}
+    	.item{
+    		color: white;
+    		justify-content: center;
+    		align-items: center;
+    		display: -webkit-flex;
+    		-webkit-flex: 1;
+    	}
+    	.box-center{
+    		position: absolute;
+    		top: 50%;
+    		left: 50%;
+    		background:#DEB887;
+    		-webkit-transform: translate(-50%,-50%);
+    		border-radius: 6px;
+    	}
+    	.nowrap{
+    		/*width: 400px;*/
+    		/*flex-flow: wrap;*/
+    		display: -webkit-flex;
+    		justify-content:space-around;
+    		background-color: antiquewhite;
+    	}
+    	.wid100{
+    		background-color: royalblue;
+    		order: -7;
+    	}
+    	.wid300{
+    		background-color: yellowgreen;
+    		order: -2;
+    	}
+    	.wid400{
+    		background-color: blueviolet;
+    		order: -1;
+    	}
+    	
+    </style>
+    <script type="text/javascript">
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   			
+   		});
+    </script>
+</head>
+<body>
+	<div class="nav">
+		<div class="img">哈士奇落差风刀霜剑</div>
+    	<div class="item">放学别走</div>
+    	<div class="item">放学别走</div>
+    	<div class="item">放学别走</div>
+    </div>
+    <div class="box-center">我在中心位置</div>
+    <div class="nowrap">
+    	<div class="wid100">1</div>
+    	<div class="wid300">2</div>
+    	<div class="wid400">3</div>
+    </div>
+    
+</body>
+</html>
