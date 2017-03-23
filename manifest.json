@@ -1,4 +1,4 @@
-﻿{
+{
     "@platforms": ["android", "iPhone", "iPad"],
     "id": "H56CD1743",/*应用的标识，创建应用时自动生成，勿手动修改*/
     "name": "test",/*应用名称，程序桌面图标名称*/
@@ -199,5 +199,59 @@
                 }
             }
         }
-    }
+    },
+	"dependencies": {
+		"pages": {
+			"index.html": {
+				"resources": [
+					"js/main.js"
+				],
+				"refer": [],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"img/ad003-l8.png",
+				"js/vendor/owlcarousel/owl.carousel.min.js",
+				"img/ad001-l.png",
+				"localStorage.html",
+				"img/logo@1x.png",
+				"img/ad002-l8.png",
+				"js/vendor/owlcarousel/assets/owl.carousel.min.css",
+				"css/cankao.css",
+				"Flexbox.html",
+				"responsible.html",
+				"js/picturefill.min.js",
+				"img/ad002-l.png",
+				"js/picturefill.js",
+				"js/vendor/owlcarousel/assets/owl.theme.green.css",
+				"img/400.png",
+				"js/vendor/owlcarousel/assets/ajax-loader.gif",
+				"img/ad003-l4.png",
+				"js/vendor/owlcarousel/assets/owl.theme.default.css",
+				"img/800.png",
+				"pic.html",
+				"img/ad001-l4.png",
+				"css/main.css",
+				"newM.html",
+				"js/vendor/jquery.min.js",
+				"js/vendor/owlcarousel/README.md",
+				"js/vendor/owlcarousel/assets/owl.theme.default.min.css",
+				"js/vendor/owlcarousel/assets/owl.theme.green.min.css",
+				"img/ad002-l4.png",
+				"indexText.html",
+				"img/1600.png",
+				"js/vendor/owlcarousel/assets/owl.carousel.css",
+				"img/ad003-l.png",
+				"flex-demo.html",
+				"img/ad001-l8.png",
+				"nth-child.html",
+				"js/vendor/owlcarousel/owl.carousel.js",
+				"js/vendor/owlcarousel/assets/owl.video.play.png",
+				"css/normalize.css",
+				"lsitImg.html"
+			]
+		}
+	}
 }
